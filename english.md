@@ -2,7 +2,8 @@
 ## Indent
 Indents as you think proper.
 
-* Indent length is 2 and space-only. Because dislike dependent tab length.
+* Indent length is 2 with space-only.
+ * Because dislike dependent tab length.
 
 good coding:
 
@@ -14,12 +15,10 @@ good coding:
 
 # display digit
 * characters per line is 80.
- * (rubric) maybe normal-width 
- * (rubric) no-reason
 
 # blank-line
 * separate some classes.
-* separate methods, attributes, inner class; but ignore first/last line
+* separate methods, attributes, and more that inner class; but ignore first/last line
 
 good coding:
 
@@ -69,3 +68,13 @@ bad coding:
       end
     
     end
+
+# Comment
+* Don't written comment inner method.
+ * Because Just do refactering when you need comments.
+* Class, Module and public-method need describe the behavior in RDocSyle.
+    # コンマ区切の文字列+str+を分割し、結果を配列にして返す。
+    def split_csv(str)
+      return str.split(/,/)
+    end
+
